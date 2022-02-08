@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class ContainsDuplicates {
 
@@ -13,6 +14,21 @@ for (int i = 0; i <nums.length;i++){
 }
     return false;
     }
+
+
+
+
+
+    public boolean containsDuplicate2(int[] nums) {
+
+        HashSet<Integer> map = new HashSet<>();
+        for (int i = 0; i <nums.length;i++){
+            return !map.add(nums[i]);
+        }
+        return false;
+    }
+
+
 
     public static void main(String[] args) {
 
