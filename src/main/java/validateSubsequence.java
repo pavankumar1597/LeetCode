@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -22,6 +21,6 @@ class Program {
     public static void main(String[] args) {
         var array = Arrays.asList(5, 1, 22, 25, 6, -1, 8, 10);
         var sequence = Arrays.asList(1, 6, -1, 10);
-    Program.isValidSubsequence(array, sequence);
+        System.out.println(Program.isValidSubsequence(array, sequence));
     }
 }
